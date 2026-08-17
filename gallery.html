@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vyshnavi Restaurant | Gallery</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loading-screen" aria-hidden="true"><div class="loading-content"><div class="loading-mark"></div><h2>Vyshnavi Restaurant</h2><p>Crafting a premium dining experience...</p></div></div>
+  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+  <div class="toast-container" aria-live="polite"></div>
+  <header class="navbar" id="top">
+    <div class="navbar-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">V</span>Vyshnavi Restaurant</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="menu.html">Menu</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="gallery.html">Gallery</a><a class="nav-link" href="reservations.html">Reservations</a><a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="btn-ghost" href="reservations.html">Book Now</a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:110px;">
+      <div class="container section-title reveal">
+        <div class="section-kicker">Gallery</div>
+        <h1>Moments captured in light, flavor, and atmosphere.</h1>
+        <p>Browse food, interior, event, and chef imagery. Tap any image to open the fullscreen lightbox and navigate with keyboard arrows or ESC.</p>
+      </div>
+      <div class="container pill-nav reveal">
+        <button class="pill-btn active" data-gallery-filter="all" type="button">All</button>
+        <button class="pill-btn" data-gallery-filter="food" type="button">Food</button>
+        <button class="pill-btn" data-gallery-filter="interior" type="button">Interior</button>
+        <button class="pill-btn" data-gallery-filter="events" type="button">Events</button>
+        <button class="pill-btn" data-gallery-filter="chefs" type="button">Chefs</button>
+      </div>
+      <div class="container grid-4">
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="food" data-title="Truffle Pasta" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Truffle pasta plated elegantly"></div><div class="gallery-card-body"><h3 class="gallery-title">Truffle Pasta</h3><p class="gallery-desc">Rich, aromatic, and plated with precision.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="food" data-title="Signature Pizza" data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Signature pizza with basil"></div><div class="gallery-card-body"><h3 class="gallery-title">Signature Pizza</h3><p class="gallery-desc">Golden crust, fresh basil, and premium cheese.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="interior" data-title="Dining Room" data-image="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Premium restaurant interior"></div><div class="gallery-card-body"><h3 class="gallery-title">Dining Room</h3><p class="gallery-desc">Warm lighting and refined seating.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="events" data-title="Private Celebration" data-image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Restaurant event table setup"></div><div class="gallery-card-body"><h3 class="gallery-title">Private Celebration</h3><p class="gallery-desc">Perfectly styled tables for special events.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="chefs" data-title="Executive Chef" data-image="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Executive chef in the kitchen"></div><div class="gallery-card-body"><h3 class="gallery-title">Executive Chef</h3><p class="gallery-desc">Focused preparation and kitchen leadership.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="food" data-title="Dessert Plate" data-image="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=900&q=80" alt="Chocolate lava cake dessert"></div><div class="gallery-card-body"><h3 class="gallery-title">Dessert Plate</h3><p class="gallery-desc">A sweet ending with elegant plating.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="interior" data-title="Private Booths" data-image="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Restaurant booth seating"></div><div class="gallery-card-body"><h3 class="gallery-title">Private Booths</h3><p class="gallery-desc">Intimate spaces for relaxed dining.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="events" data-title="Anniversary Dinner" data-image="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80" alt="Anniversary dining setup"></div><div class="gallery-card-body"><h3 class="gallery-title">Anniversary Dinner</h3><p class="gallery-desc">Celebration tables with a romantic tone.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="chefs" data-title="Pastry Chef" data-image="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=900&q=80" alt="Pastry chef portrait"></div><div class="gallery-card-body"><h3 class="gallery-title">Pastry Chef</h3><p class="gallery-desc">Precision and artistry in every dessert.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="food" data-title="Healthy Bowl" data-image="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Healthy bowl meal"></div><div class="gallery-card-body"><h3 class="gallery-title">Healthy Bowl</h3><p class="gallery-desc">Fresh, vibrant, and colorful food styling.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="interior" data-title="Bar Counter" data-image="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80" alt="Restaurant bar counter"></div><div class="gallery-card-body"><h3 class="gallery-title">Bar Counter</h3><p class="gallery-desc">Dark woods and premium lighting accents.</p></div></article>
+        <article class="gallery-card reveal" tabindex="0" role="button" data-gallery-item data-category="events" data-title="Corporate Dinner" data-image="https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?auto=format&fit=crop&w=1600&q=80"><div class="gallery-media"><img src="https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?auto=format&fit=crop&w=900&q=80" alt="Corporate dinner event"></div><div class="gallery-card-body"><h3 class="gallery-title">Corporate Dinner</h3><p class="gallery-desc">Sophisticated hosting for group gatherings.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Gallery lightbox">
+      <div class="lightbox-actions">
+        <div>
+          <h3 class="lightbox-title" data-lightbox-title>Image</h3>
+          <div class="lightbox-meta" data-lightbox-counter>1 / 1</div>
+        </div>
+        <button class="close-lightbox" data-lightbox-close type="button" aria-label="Close lightbox">×</button>
+      </div>
+      <div class="lightbox-media"><img data-lightbox-image src="" alt=""></div>
+      <div class="lightbox-actions">
+        <div class="lightbox-nav">
+          <button class="lightbox-btn" data-lightbox-prev type="button" aria-label="Previous image">←</button>
+          <button class="lightbox-btn" data-lightbox-next type="button" aria-label="Next image">→</button>
+        </div>
+        <span class="lightbox-meta">Use ESC to close</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer"><div class="container footer-copy">© 2026 Vyshnavi Restaurant. All rights reserved.</div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
