@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vyshnavi Restaurant | Reservations</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loading-screen" aria-hidden="true"><div class="loading-content"><div class="loading-mark"></div><h2>Vyshnavi Restaurant</h2><p>Crafting a premium dining experience...</p></div></div>
+  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+  <div class="toast-container" aria-live="polite"></div>
+  <header class="navbar" id="top">
+    <div class="navbar-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">V</span>Vyshnavi Restaurant</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="menu.html">Menu</a><a class="nav-link" href="about.html">About</a><a class="nav-link" href="gallery.html">Gallery</a><a class="nav-link" href="reservations.html">Reservations</a><a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="btn-ghost" href="menu.html">View Menu</a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:110px;">
+      <div class="container section-title reveal">
+        <div class="section-kicker">Reservations</div>
+        <h1>Reserve your table with ease.</h1>
+        <p>Plan your dining experience at Vyshnavi Restaurant. This is a frontend-only simulation that validates your input and stores the latest reservation locally.</p>
+      </div>
+      <div class="container reservation-layout">
+        <form class="form-card reveal-left" data-reservation-form>
+          <div class="grid-2">
+            <div class="form-group"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Your full name"></div>
+            <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+            <div class="form-group"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" placeholder="+91 98765 43210"></div>
+            <div class="form-group"><label for="date">Date</label><input id="date" name="date" type="date"></div>
+            <div class="form-group"><label for="time">Time</label><input id="time" name="time" type="time"></div>
+            <div class="form-group"><label for="guests">Number of Guests</label><select id="guests" name="guests"><option value="">Select guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></div>
+          </div>
+          <div class="form-group" style="margin-top:1rem;"><label for="requests">Special Requests</label><textarea id="requests" name="requests" placeholder="Birthday setup, anniversary note, seating preference..."></textarea></div>
+          <div class="form-actions" style="margin-top:1rem;"><button class="btn" type="submit">Reserve My Table</button><span class="small-note">Your latest reservation is stored locally in your browser.</span></div>
+        </form>
+        <aside class="reservation-stack reveal-right">
+          <article class="reservation-card">
+            <div class="card-body">
+              <h3 class="card-title">Your Reservation</h3>
+              <p class="reservation-text">The latest reservation submitted from this browser will appear below.</p>
+              <div class="reservation-status" data-reservation-preview></div>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🕯️</div>
+            <h3 class="feature-title">Elegant Dining Experience</h3>
+            <p class="feature-desc">Ideal for intimate dinners, family gatherings, celebrations, and premium casual dining.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-copy">© 2026 Vyshnavi Restaurant. All rights reserved.</div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
