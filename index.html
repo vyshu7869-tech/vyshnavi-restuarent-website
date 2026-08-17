@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vyshnavi Restaurant | Home</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loading-screen" aria-hidden="true">
+    <div class="loading-content">
+      <div class="loading-mark"></div>
+      <h2>Vyshnavi Restaurant</h2>
+      <p>Crafting a premium dining experience...</p>
+    </div>
+  </div>
+
+  <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+
+  <div class="toast-container" aria-live="polite"></div>
+
+  <header class="navbar" id="top">
+    <div class="navbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">V</span>
+        Vyshnavi Restaurant
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="reservations.html">Reservations</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn-ghost" href="reservations.html">Book Now</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="order-dock" aria-label="Your order panel">
+    <button class="btn btn-sm order-toggle" data-order-toggle type="button" aria-expanded="false">Your Order</button>
+    <div class="order-panel">
+      <div class="order-head">
+        <h3>Your Order</h3>
+        <button class="btn-ghost btn-sm" data-clear-order type="button">Clear</button>
+      </div>
+      <div class="order-items" data-order-items></div>
+      <div class="order-summary">
+        <div class="summary-row"><span>Subtotal</span><strong data-order-subtotal>₹0</strong></div>
+        <div class="summary-row"><span>Tax (5%)</span><strong data-order-tax>₹0</strong></div>
+        <div class="summary-row total"><span>Total</span><strong data-order-total>₹0</strong></div>
+        <button class="btn" data-place-order type="button">Place Order</button>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero" style="--hero-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-floating one"></div>
+      <div class="hero-floating two"></div>
+      <div class="hero-floating three"></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal-left">
+          <div class="hero-brand">Vyshnavi Restaurant</div>
+          <h1>Every Bite Tells a Story</h1>
+          <p>Where unforgettable flavors meet unforgettable moments. Discover a warm, cinematic dining experience crafted with premium ingredients and heartfelt hospitality.</p>
+          <div class="hero-actions">
+            <a class="btn" href="menu.html">Explore Menu</a>
+            <a class="btn-outline" href="reservations.html">Reserve a Table</a>
+          </div>
+        </div>
+        <div class="hero-card-stack reveal-right">
+          <article class="hero-info-card">
+            <h3>Chef-led dining, refined atmosphere</h3>
+            <p>From handcrafted pasta to signature desserts, every plate is designed to feel memorable, indulgent, and beautifully presented.</p>
+          </article>
+          <article class="hero-info-card">
+            <h3>Warm ambience, premium service</h3>
+            <p>Ideal for family dinners, date nights, celebrations, and casual luxury dining with a premium restaurant feel.</p>
+          </article>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#specialities">
+        <span></span>
+        Scroll
+      </a>
+    </section>
+
+    <section class="section" id="specialities">
+      <div class="container">
+        <div class="section-title reveal">
+          <div class="section-kicker">Specialities</div>
+          <h2>Signature tastes with a premium presentation</h2>
+          <p>Every category is curated to showcase Vyshnavi Restaurant as a modern restaurant brand with comfort, elegance, and flavor at the center.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card special-card reveal">
+            <div class="card-media"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Signature pizza with fresh basil"></div>
+            <div class="card-body">
+              <h3 class="card-title">Signature Pizzas</h3>
+              <p class="card-text">Wood-fired style pizzas layered with premium toppings, rich sauces, and golden crusts.</p>
+            </div>
+          </article>
+          <article class="card special-card reveal">
+            <div class="card-media"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Italian pasta in a premium bowl"></div>
+            <div class="card-body">
+              <h3 class="card-title">Italian Pasta</h3>
+              <p class="card-text">Creamy, aromatic pasta dishes inspired by timeless Italian comfort and refined technique.</p>
+            </div>
+          </article>
+          <article class="card special-card reveal">
+            <div class="card-media"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Fresh healthy salad with vegetables"></div>
+            <div class="card-body">
+              <h3 class="card-title">Fresh & Healthy</h3>
+              <p class="card-text">Bright, nourishing dishes for a lighter meal without compromising on taste or visual appeal.</p>
+            </div>
+          </article>
+          <article class="card special-card reveal">
+            <div class="card-media"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Premium dessert with chocolate and berries"></div>
+            <div class="card-body">
+              <h3 class="card-title">Desserts</h3>
+              <p class="card-text">Decadent sweet endings prepared to leave a lasting impression after every meal.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <div class="section-kicker">Popular Dishes</div>
+          <h2>Premium dishes loved by our guests</h2>
+          <p>Each dish below is designed as a statement plate with strong visuals and easy one-click ordering for your order panel.</p>
+        </div>
+        <div class="grid-3">
+          <article class="menu-card reveal" data-filter-item data-category="pasta">
+            <div class="menu-card-media"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Truffle mushroom pasta"></div>
+            <div class="menu-card-body">
+              <div class="menu-topline"><span class="badge">Chef Special</span><span class="price">₹360</span></div>
+              <h3 class="menu-title">Truffle Mushroom Pasta</h3>
+              <p class="menu-desc">Silky pasta with mushroom duxelles, truffle oil, parmesan, and herbs.</p>
+              <button class="btn btn-sm" data-add-to-order data-id="t1" data-name="Truffle Mushroom Pasta" data-price="360" data-image="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80">Add to Order</button>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-filter-item data-category="pizza">
+            <div class="menu-card-media"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Classic margherita pizza"></div>
+            <div class="menu-card-body">
+              <div class="menu-topline"><span class="badge">Bestseller</span><span class="price">₹320</span></div>
+              <h3 class="menu-title">Classic Margherita Pizza</h3>
+              <p class="menu-desc">Fresh tomato sauce, mozzarella, basil leaves, and a crisp hand-tossed base.</p>
+              <button class="btn btn-sm" data-add-to-order data-id="t2" data-name="Classic Margherita Pizza" data-price="320" data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80">Add to Order</button>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-filter-item data-category="desserts">
+            <div class="menu-card-media"><img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=900&q=80" alt="Chocolate lava cake"></div>
+            <div class="menu-card-body">
+              <div class="menu-topline"><span class="badge">Sweet Ending</span><span class="price">₹240</span></div>
+              <h3 class="menu-title">Chocolate Lava Cake</h3>
+              <p class="menu-desc">Warm chocolate center served with vanilla ice cream and berry compote.</p>
+              <button class="btn btn-sm" data-add-to-order data-id="t3" data-name="Chocolate Lava Cake" data-price="240" data-image="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=900&q=80">Add to Order</button>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-filter-item data-category="maincourse">
+            <div class="menu-card-media"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" alt="Creamy alfredo pasta"></div>
+            <div class="menu-card-body">
+              <div class="menu-topline"><span class="badge">Creamy</span><span class="price">₹350</span></div>
+              <h3 class="menu-title">Creamy Alfredo Pasta</h3>
+              <p class="menu-desc">Rich white sauce with garlic, herbs, and garden vegetables in every bite.</p>
+              <button class="btn btn-sm" data-add-to-order data-id="t4" data-name="Creamy Alfredo Pasta" data-price="350" data-image="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80">Add to Order</button>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-filter-item data-category="maincourse">
+            <div class="menu-card-media"><img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=900&q=80" alt="Grilled peri peri chicken"></div>
+            <div class="menu-card-body">
+              <div class="menu-topline"><span class="badge">Spicy</span><span class="price">₹420</span></div>
+              <h3 class="menu-title">Grilled Peri Peri Chicken</h3>
+              <p class="menu-desc">Smoky grilled chicken finished with peri peri glaze and roasted vegetables.</p>
+              <button class="btn btn-sm" data-add-to-order data-id="t5" data-name="Grilled Peri Peri Chicken" data-price="420" data-image="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=900&q=80">Add to Order</button>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-filter-item data-category="indian">
+            <div class="menu-card-media"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Paneer tikka platter"></div>
+            <div class="menu-card-body">
+              <div class="menu-topline"><span class="badge">Indian Delight</span><span class="price">₹390</span></div>
+              <h3 class="menu-title">Paneer Tikka Platter</h3>
+              <p class="menu-desc">Charred paneer cubes with peppers, onions, mint chutney, and fresh salad.</p>
+              <button class="btn btn-sm" data-add-to-order data-id="t6" data-name="Paneer Tikka Platter" data-price="390" data-image="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80">Add to Order</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-block">
+        <div class="section-title reveal-left" style="text-align:left;margin:0;">
+          <div class="section-kicker">About Preview</div>
+          <h2>More Than a Meal, It's a Story.</h2>
+          <p>Vyshnavi Restaurant blends premium presentation, soulful recipes, and warm hospitality into a dining journey that feels special from the first glance to the final bite.</p>
+          <div class="hero-actions" style="margin-top:1.5rem;">
+            <a class="btn" href="about.html">Discover Our Story</a>
+          </div>
+        </div>
+        <div class="story-card reveal-right">
+          <div class="story-media"><img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=1200&q=80" alt="Elegant restaurant table setting"></div>
+          <div class="card-body">
+            <div class="story-quote">Good food brings people together. Great food creates memories.</div>
+            <p class="story-text" style="margin-top:1rem;">We believe dining should feel like a memorable chapter, not just a meal. That is why every detail at The Hungry Tale is thoughtfully designed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <div class="section-kicker">Why Choose Us</div>
+          <h2>Crafted around quality, comfort, and consistency</h2>
+        </div>
+        <div class="grid-4">
+          <article class="feature-card reveal"><div class="feature-icon">🥬</div><h3 class="feature-title">Fresh Ingredients</h3><p class="feature-desc">Seasonal produce and premium ingredients brought together with care.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">👨‍🍳</div><h3 class="feature-title">Expert Chefs</h3><p class="feature-desc">A skilled team delivering refined flavors and polished presentation.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">🕯️</div><h3 class="feature-title">Cozy Ambience</h3><p class="feature-desc">A warm, elegant setting designed for relaxed premium dining.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">⭐</div><h3 class="feature-title">Exceptional Service</h3><p class="feature-desc">Friendly hospitality and attentive service that elevates the experience.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <div class="section-kicker">Testimonials</div>
+          <h2>Guest experiences that speak for themselves</h2>
+        </div>
+        <div class="grid-3">
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">The food was incredible and the ambience was perfect!</p>
+            <div class="review-author">- Ananya Mehta</div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">One of the best dining experiences I've had.</p>
+            <div class="review-author">- Karan Shah</div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Every dish felt carefully crafted and beautifully served.</p>
+            <div class="review-author">- Priya Nair</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <div class="section-kicker">Reserve Now</div>
+          <h2>Ready for your next delicious story?</h2>
+        </div>
+        <div style="text-align:center;" class="reveal">
+          <a class="btn" href="reservations.html">Reserve Your Table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark">T</span> Vyshnavi Restaurant</a>
+        <p style="margin-top:1rem;max-width:460px;">A premium restaurant experience where modern dining meets warm hospitality, cinematic atmosphere, and memorable flavors.</p>
+        <div class="footer-social">
+          <a class="social-link" href="#" aria-label="Instagram">⌁</a>
+          <a class="social-link" href="#" aria-label="Facebook">f</a>
+          <a class="social-link" href="#" aria-label="X">x</a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opening Hours</h3>
+        <ul class="hours-list">
+          <li>Mon - Fri: 11:00 AM - 10:30 PM</li>
+          <li>Sat - Sun: 10:00 AM - 11:30 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li>Vyshnavi Restaurant, Main Street</li>
+          <li>+91 98765 43210</li>
+          <li>hello@thehungrytale.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-copy">© 2026 Vyshnavi Restaurant. All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
