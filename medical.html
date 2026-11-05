@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records | Vyshnavi Pet Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Vyshnavi Pet Care</h1>
+    <p>Compassionate Care for Every Pet</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="owners.html">Owners</a>
+    <a href="pets.html">Pets</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="medical.html">Medical Records</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+<main class="medical-page">
+
+    <section class="medical-banner">
+        <img src="images/medical.jpg"
+     alt="Veterinarian checking a pet"
+     class="page-image">
+        <h2>Pet Medical Records</h2>
+        <p>Your pet's health deserves careful attention and organized records.</p>
+        <p>Maintain important information about veterinary visits, vaccinations, diagnoses and treatments.</p>
+    </section>
+
+    <section class="medical-section">
+        <h2>Add a New Medical Record</h2>
+        <p>Enter the details of your pet's veterinary visit below.</p>
+
+        <form>
+            <label>Pet Name</label>
+            <input type="text" placeholder="Enter pet name" required>
+
+            <label>Owner Name</label>
+            <input type="text" placeholder="Enter owner name" required>
+
+            <label>Pet Species</label>
+            <select>
+                <option value="">Select species</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Bird</option>
+                <option>Rabbit</option>
+                <option>Fish</option>
+                <option>Other</option>
+            </select>
+
+            <label>Veterinary Visit Date</label>
+            <input type="date" required>
+
+            <label>Veterinarian Name</label>
+            <input type="text" placeholder="Enter veterinarian name">
+
+            <label>Record Type</label>
+            <select required>
+                <option value="">Select record type</option>
+                <option>General Check-up</option>
+                <option>Vaccination</option>
+                <option>Diagnosis</option>
+                <option>Treatment</option>
+                <option>Follow-up Visit</option>
+                <option>Other</option>
+            </select>
+
+            <label>Diagnosis / Health Condition</label>
+            <textarea placeholder="Enter diagnosis or health condition"></textarea>
+
+            <label>Treatment Details</label>
+            <textarea placeholder="Enter treatment details"></textarea>
+
+            <label>Medication Information</label>
+            <textarea placeholder="Enter medication information provided by the veterinarian"></textarea>
+
+            <label>Next Follow-up Date</label>
+            <input type="date">
+
+            <label>Additional Notes</label>
+            <textarea placeholder="Enter any additional medical information"></textarea>
+
+            <button type="submit">Save Medical Record</button>
+        </form>
+    </section>
+
+    <section class="medical-section">
+        <h2>Types of Medical Records</h2>
+        <p>Different types of medical records help maintain a useful history of your pet's healthcare.</p>
+
+        <div class="medical-grid">
+
+            <div class="medical-card">
+                <h3>Vaccination Records</h3>
+                <p>Maintain information about vaccines received and recommended future vaccination visits.</p>
+            </div>
+
+            <div class="medical-card">
+                <h3>General Health Check-ups</h3>
+                <p>Record routine veterinary examinations and important health observations.</p>
+            </div>
+
+            <div class="medical-card">
+                <h3>Diagnosis Records</h3>
+                <p>Keep information about health conditions identified by a qualified veterinarian.</p>
+            </div>
+
+            <div class="medical-card">
+                <h3>Treatment Records</h3>
+                <p>Maintain details about treatments and care provided during veterinary visits.</p>
+            </div>
+
+            <div class="medical-card">
+                <h3>Medication Records</h3>
+                <p>Organize medication information and instructions provided by the veterinarian.</p>
+            </div>
+
+            <div class="medical-card">
+                <h3>Follow-up Records</h3>
+                <p>Keep track of follow-up visits and veterinary recommendations.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="medical-section">
+        <h2>Importance of Maintaining Medical Records</h2>
+
+        <div class="medical-info">
+            <h3>1. Health History</h3>
+            <p>Medical records provide a history of previous veterinary visits, health conditions and treatments.</p>
+        </div>
+
+        <div class="medical-info">
+            <h3>2. Vaccination Tracking</h3>
+            <p>Organized vaccination information helps pet owners discuss appropriate vaccination schedules with veterinarians.</p>
+        </div>
+
+        <div class="medical-info">
+            <h3>3. Better Communication</h3>
+            <p>Accurate records help pet owners communicate previous health information to veterinary professionals.</p>
+        </div>
+
+        <div class="medical-info">
+            <h3>4. Follow-up Care</h3>
+            <p>Recording follow-up dates helps owners keep track of veterinary recommendations and future visits.</p>
+        </div>
+    </section>
+
+    <section class="medical-section">
+        <h2>Tips for Responsible Pet Healthcare</h2>
+
+        <ul>
+            <li>Schedule regular veterinary check-ups.</li>
+            <li>Maintain vaccination information.</li>
+            <li>Keep previous prescriptions and medical reports organized.</li>
+            <li>Follow the veterinarian's instructions for treatment.</li>
+            <li>Record important changes in your pet's health.</li>
+            <li>Attend recommended follow-up appointments.</li>
+        </ul>
+    </section>
+
+    <section class="medical-section">
+        <h2>Medical Record Management</h2>
+        <p>The Vyshnavi Pet Care Management System is designed to organize medical information associated with registered pets.</p>
+        <p>Medical records can be linked with pet profiles and owner details to maintain a structured history of veterinary care.</p>
+        <p>This helps keep important information organized and easier to refer to during future veterinary visits.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Vyshnavi Pet Care. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
